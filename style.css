@@ -40,3 +40,20 @@
     font-size: 1.2rem; /* Larger text for better readability */
   }
 }
+#gif-container {
+  text-align: center; /* Centers the inline image */
+  width: 100%; /* Ensures the container takes the full width */
+  max-width: 600px; /* Adjust this value based on your preferred maximum size for the GIF */
+  margin: 0 auto; /* Centers the container */
+}
+
+#gif-container img {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  max-width: 100%; /* Prevents the image from exceeding its natural size */
+}
+@media (max-width: 768px) {
+  #gif-container {
+    max-width: 90%; /* Allows the GIF to take more screen width on smaller devices */
+  }
+}
