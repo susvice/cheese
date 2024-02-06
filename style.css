@@ -1,0 +1,20 @@
+#quiz-container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+#answers li {
+  list-style-type: none;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+#answers li:hover {
+  background-color: #eee;
+}
+
+.selected-answer {
+  background-color: #fdcb6d; /* Light khaki for the selected answer */
+  color: #000; /* Optionally change the text color if needed */
+}
