@@ -8,6 +8,16 @@ document.addEventListener('DOMContentLoaded', function() {
           ], 
           correctIndices: [0, 1, 3] // Indices of correct answers
       },
+      { 
+          text: "Where haven't we gone together?", 
+          answers: [
+              {text: "Inside Aga Khan", feedback: "Yup, it was just me running around trying to see everything in 8 minutes haha"},
+              {text: "Outside Aga Khan", feedback: "C'mon, we've been here."},
+              {text: "Celebration Square", feedback: "I am offended."},
+              {text: "Monarch Park", feedback: "Technically parked outside, but we did go here..."},
+          ], 
+          correctIndices: [0] // Indices of correct answers
+      },
       // Additional questions as needed
   ];
 
@@ -41,6 +51,15 @@ document.addEventListener('DOMContentLoaded', function() {
   function selectAnswer(index) {
       selectedAnswerIndex = index; // Update selected answer
       // Optionally highlight the selected answer
+      // Iterate over all answers to remove the highlight class
+    const answerLis = answersElement.querySelectorAll('li');
+    answerLis.forEach((li, idx) => {
+        if (idx === index) {
+            li.classList.add('selected-answer'); // Add the class to the selected answer
+        } else {
+            li.classList.remove('selected-answer'); // Remove the class from all other answers
+        }
+    });
   }
 
   submitButton.addEventListener('click', function() {

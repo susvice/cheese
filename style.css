@@ -13,12 +13,30 @@
 #answers li:hover {
   background-color: #eee;
 }
-
 .selected-answer {
-  background-color: #fdcb6d; /* Light khaki for the selected answer */
-  color: #000; /* Optionally change the text color if needed */
+  background-color: #D2B48C; /* Adjusted to a single declaration */
+  color: white;
 }
-
 #gif-container {
   text-align: center;
+}
+#feedback-container {
+  text-align: center;
+}
+#feedback-container button, #submit-answer {
+  display: block;
+  margin: 20px auto;
+  width: 200px; /* Adjust for buttons */
+}
+@media (max-width: 768px) {
+  #quiz-container, #feedback-container, #gif-container {
+    width: 90%; /* Adjust containers for smaller screens */
+  }
+  #feedback-container button, #submit-answer {
+    width: auto; /* Allow buttons to grow */
+    padding: 10px 20px; /* Larger tap targets */
+  }
+  #question, #answers li {
+    font-size: 1.2rem; /* Larger text for better readability */
+  }
 }
