@@ -18,3 +18,7 @@
   background-color: #fdcb6d; /* Light khaki for the selected answer */
   color: #000; /* Optionally change the text color if needed */
 }
+
+#gif-container {
+  text-align: center;
+}
