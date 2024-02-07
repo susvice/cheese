@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
               {text: "Ok...", feedback: "Alright... let's go!"},
               {text: "That wasn't even hard. What do you take me for?", feedback: "Respect."},
           ], 
-          correctIndices: [2, 3] // Indices of correct answers
+          correctIndices: [0, 1] // Indices of correct answers
       },
       { 
           text: "What is the most important thing in this world?", 
