@@ -8,6 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
         ], 
         correctIndices: [0, 1] // Indices of correct answers
     },
+    { 
+        text: "Ready to start?", 
+        answers: [
+            {text: "Yes vice!", feedback: "Haha, ok"},
+            {text: "No...", feedback: "Ngl, was not expecting that lol. Do it anyway xD"},
+        ], 
+        correctIndices: [0, 1] // Indices of correct answers
+    },
       { 
           text: "We'll start off with something really easy. Who is sus?", 
           answers: [
@@ -80,6 +88,47 @@ document.addEventListener('DOMContentLoaded', function() {
           correctIndices: [0, 1, 2, 3] // Indices of correct answers
       },
       { 
+          text: "Ok ok the next one will be easy I promise", 
+          answers: [
+              {text: "No I want the hard ones", feedback: "I knew you'd say that. But we'll do a couple easy ones first."},
+              {text: "Thank you", feedback: "Gotchu"},
+          ], 
+          correctIndices: [0, 1] // Indices of correct answers
+      },
+      { 
+          text: "Let's do an English question (my weakest subject). What is love farming?", 
+          answers: [
+              {text: "Something about romance with multiple people?", feedback: "C'mon, you know this one. Try again!"},
+              {text: "Farming turnips for someone else in animal crossing!", feedback: "Yes, according to me lol"},
+          ], 
+          correctIndices: [1] // Indices of correct answers
+      },
+      { 
+          text: "Something else English related? What word did you learn from me?", 
+          answers: [
+              {text: "Onslaught", feedback: "Yup, 'slaughter on the spot' right?"},
+              {text: "Vice!", feedback: "Yup :)"},
+              {text: "Wild", feedback: "Yess!"},
+          ], 
+          correctIndices: [0, 1, 2] // Indices of correct answers
+      },
+      { 
+          text: "And what's a phrase I learned from you?", 
+          answers: [
+              {text: "Hej!", feedback: "Technically yes haha"},
+              {text: "Bing chilling", feedback: "Nono, I know this from the meme."},
+              {text: "Big chilling!", feedback: "Yess!"},
+          ], 
+          correctIndices: [0, 2] // Indices of correct answers
+      },
+      { 
+          text: "Ok let's switch topics", 
+          answers: [
+              {text: "Ok?", feedback: "You got this."},
+          ], 
+          correctIndices: [0,] // Indices of correct answers
+      },
+      { 
           text: "Alright, according to some 'texts', people born on March 18th have...", 
           answers: [
               {text: "Remakable physical strength", feedback: "I'm flattered"},
@@ -90,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
           correctIndices: [0, 1, 2, 3] // Indices of correct answers
       },
       { 
-          text: "According to some 'texts', people born on January 3rd have...", 
+          text: "And according to these same sources, people born on January 3rd have...", 
           answers: [
               {text: "Rock-solid determination", feedback: "Yess!"},
               {text: "A stubborn nature", feedback: "Hell no! Try again!"},
@@ -117,33 +166,80 @@ document.addEventListener('DOMContentLoaded', function() {
           correctIndices: [0, 1] // Indices of correct answers
       },
       { 
+          text: "But the next few aren't really questions.", 
+          answers: [
+              {text: "And this isn't really an answer", feedback: "Keep going..."},
+          ], 
+          correctIndices: [0, 1] // Indices of correct answers
+      },
+      { 
           text: "Is there someone that's very thankful to have you in their life?", 
           answers: [
-              {text: "Yes", feedback: ""},
+              {text: "Yes", feedback: "I wonder who that is."},
           ], 
           correctIndices: [0] // Indices of correct answers
       },
       { 
           text: "Did that person write a quiz and bury some cheesy stuff at the end?", 
           answers: [
-              {text: "Yes", feedback: ""},
+              {text: "Seems like it", feedback: "Yeah ok I'm cheesy sometimes"},
           ], 
           correctIndices: [0] // Indices of correct answers
       },
       { 
-          text: "Like saying how you're the best?", 
+          text: "Does that person think you're the best?", 
           answers: [
-              {text: "Yes... -__-", feedback: ""},
+              {text: "Yes", feedback: ":)"},
+              {text: "Yes!", feedback: ":)"},
+              {text: "Yes!!", feedback: ":)"},
           ], 
-          correctIndices: [0] // Indices of correct answers
+          correctIndices: [0, 1, 2] // Indices of correct answers
       },
       { 
-          text: "But you know what I really mean whenever I say that right?", 
+          text: "But you know what they really mean whenever they say 'you're the best' right?", 
           answers: [
-                {text: "Yes?", feedback: "Ok good."},
-                {text: "No?", feedback: "Oh lol, ok tell me and I'll correct this immediately."},
+                {text: "Yes", feedback: "Ok good. You're the best."},
+                {text: "No?", feedback: "Oh! Ok tell me and I'll correct this immediately."},
           ], 
           correctIndices: [0, 1] // Indices of correct answers
+      },
+      { 
+          text: "But that's the end of the quiz.", 
+          answers: [
+                {text: "Finally", feedback: "No offense taken"},
+                {text: "No!", feedback: "Dw I'll follow up with a part 2 maybe sometime ;)"},
+          ], 
+          correctIndices: [0, 1] // Indices of correct answers
+      },
+      { 
+          text: "Want to know what your prize is?", 
+          answers: [
+                {text: "Was not expecting a prize...", feedback: "Well you aced the quiz so... click 'Next Question'"},
+                {text: "Yes, FINALLY!", feedback: "lol gotchu, click 'Next Question'"},
+          ], 
+          correctIndices: [0, 1] // Indices of correct answers
+      },
+      { 
+          text: "Actually, your prize is on hold. I'll give it to you later.", 
+          answers: [
+                {text: "What the heck", feedback: "Sorry haha"},
+                {text: "Fine!", feedback: "Dw, it'll be worth it (maybe)"},
+          ], 
+          correctIndices: [0, 1] // Indices of correct answers
+      },
+      { 
+          text: "Ok one last question...", 
+          answers: [
+                {text: "Uh oh", feedback: "Here it comes..."},
+          ], 
+          correctIndices: [0] // Indices of correct answers
+      },
+      { 
+          text: "Will you be my valentine?", 
+          answers: [
+                {text: "Oh god", feedback: "Yeah I know xD"},
+          ], 
+          correctIndices: [0] // Indices of correct answers
       },
       
       // Additional questions as needed
@@ -224,9 +320,10 @@ document.addEventListener('DOMContentLoaded', function() {
           showQuestion();
       } else {
           // End of quiz logic here
-          questionElement.textContent = "Alright that's it. Not that bad? Maybe even kinda fun?";
+          questionElement.textContent = "Alright that's it. Cheesyness over!";
           feedbackContainer.style.display = 'none';
           answersElement.style.display = 'none';
+          questionElement.style.display = 'none';
       }
       // Prepare UI for next question
       answersElement.style.display = 'block';
