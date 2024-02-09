@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
           correctIndices: [0,] // Indices of correct answers
       },
       { 
-          text: "Alright, according to some 'texts', people born on March 18th have...", 
+          text: "So according to some 'texts', people born on March 18th have...", 
           answers: [
               {text: "Remakable physical strength", feedback: "I'm flattered"},
               {text: "Resilience and optimism", feedback: "If you say so!"},
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
           correctIndices: [0, 1] // Indices of correct answers
       },
       { 
-          text: "But that's the end of the quiz.", 
+          text: "Anyway that's the end of the quiz.", 
           answers: [
                 {text: "Finally", feedback: "No offense taken"},
                 {text: "No!", feedback: "Dw I'll follow up with a part 2 maybe sometime ;)"},
