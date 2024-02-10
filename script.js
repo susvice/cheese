@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
   const questions = [
     { 
-        text: "You said you like quizzes right? Ok so I made you a quiz xD", 
+        text: "You said you like quizzes right? Ok so I made you a quiz.", 
         answers: [
             {text: "Ok...", feedback: "Don't worry, it'll be fun (I think). Let's try it."},
-            {text: "Ok!", feedback: "I like the excitement! Hope you like it!"},
+            {text: "Ok!", feedback: "I like the excitement! Hope you like it."},
         ], 
         correctIndices: [0, 1] // Indices of correct answers
     },
     { 
         text: "Ready to start?", 
         answers: [
-            {text: "Yes vice!", feedback: "Haha, ok"},
-            {text: "No...", feedback: "Ngl, was not expecting that lol. Do it anyway xD"},
+            {text: "Yes vice!", feedback: "Good."},
+            {text: "No...", feedback: "Ngl, was not expecting that. Do it anyway ;)"},
         ], 
         correctIndices: [0, 1] // Indices of correct answers
     },
@@ -20,14 +20,15 @@ document.addEventListener('DOMContentLoaded', function() {
           text: "We'll start off with something really easy. Who is sus?", 
           answers: [
               {text: "Me", feedback: "According to you, yes."},
-              {text: "You", feedback: "I was thinking me, but yeah that works too lol"},
+              {text: "You", feedback: "I was thinking me, but yeah that works too."},
+              {text: "I'm confused, who's 'me' and who's 'you'?", feedback: "True. Didn't think of that. Actually I did. Me is me (the one asking the question). Now try again with this knowledge."},
           ], 
           correctIndices: [0, 1] // Indices of correct answers
       },
       { 
           text: "Now something about us. Where haven't we gone together?", 
           answers: [
-              {text: "Inside Aga Khan", feedback: "Yup, it was just me running around trying to see everything in 8 minutes haha"},
+              {text: "Inside Aga Khan", feedback: "Right, it was just me running around trying to see everything in 8 minutes haha"},
               {text: "Outside Aga Khan", feedback: "C'mon, we've been here."},
               {text: "Celebration Square", feedback: "I am offended."},
               {text: "Monarch Park", feedback: "Technically parked outside, but we did go here..."},
@@ -39,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
           answers: [
               {text: "Me", feedback: "Umm technically you won?"},
               {text: "You", feedback: "Yeah you are way too good. And you keep getting better too. If we ever play again I'm gonna get smoked."},
-              {text: "I'm confused, who's 'me' and who's 'you'?", feedback: "True. Didn't think of that. Actually I did. Me is me (the one asking the question). Now try again with this knowledge lol."},
+              {text: "I'm confused, who's 'me' and who's 'you'?", feedback: "True. Didn't think of that. Actually I did. Me is me (the one asking the question). Now try again with this knowledge."},
           ], 
           correctIndices: [1] // Indices of correct answers
       },
@@ -83,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
               {text: "God", feedback: "Interesting choice."},
               {text: "Family", feedback: "Makes sense."},
               {text: "Humanity", feedback: "An altruist. Amazing."},
-              {text: "I thought this one would be easier!", feedback: "Fair, you can skip if you want lol"},
+              {text: "I thought this one would be easier!", feedback: "Fair, you can skip if you want!"},
           ], 
           correctIndices: [0, 1, 2, 3] // Indices of correct answers
       },
@@ -99,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
           text: "Let's do an English question (my weakest subject). What is love farming?", 
           answers: [
               {text: "Something about romance with multiple people?", feedback: "C'mon, you know this one. Try again!"},
-              {text: "Farming turnips for someone else in animal crossing!", feedback: "Yes, according to me lol"},
+              {text: "Farming turnips for someone else in animal crossing!", feedback: "Yes! According to me."},
           ], 
           correctIndices: [1] // Indices of correct answers
       },
@@ -115,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
       { 
           text: "And what's a phrase I learned from you?", 
           answers: [
-              {text: "Hej!", feedback: "Technically yes haha"},
+              {text: "Hej!", feedback: "Technically yes!"},
               {text: "Bing chilling", feedback: "Nono, I know this from the meme."},
               {text: "Big chilling!", feedback: "Yess!"},
           ], 
@@ -124,12 +125,12 @@ document.addEventListener('DOMContentLoaded', function() {
       { 
           text: "Ok let's switch topics", 
           answers: [
-              {text: "Ok?", feedback: "You got this."},
+              {text: "Ok?", feedback: "Let's go!"},
           ], 
           correctIndices: [0,] // Indices of correct answers
       },
       { 
-          text: "So according to some 'texts', people born on March 18th have...", 
+          text: "According to some 'texts', people born on March 18th have...", 
           answers: [
               {text: "Remakable physical strength", feedback: "I'm flattered"},
               {text: "Resilience and optimism", feedback: "If you say so!"},
@@ -160,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
       { 
           text: "Getting tired of this yet?", 
           answers: [
-              {text: "Yes, let's skip to the end", feedback: "Umm ok, but I didn't program that option so..."},
+              {text: "Yes, let's skip to the end", feedback: "Umm, I didn't program that option..."},
               {text: "No! A few more!", feedback: "Gotchu"},
           ], 
           correctIndices: [0, 1] // Indices of correct answers
@@ -168,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
       { 
           text: "But the next few aren't really questions.", 
           answers: [
-              {text: "And this isn't really an answer", feedback: "Keep going..."},
+              {text: "And this isn't really an answer", feedback: "Yes, but keep going!"},
           ], 
           correctIndices: [0, 1] // Indices of correct answers
       },
@@ -196,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
           correctIndices: [0, 1, 2] // Indices of correct answers
       },
       { 
-          text: "But you know what they really mean whenever they say 'you're the best' right?", 
+          text: "Do you know what they really mean whenever they say 'you're the best'?", 
           answers: [
                 {text: "Yes", feedback: "Ok good. You're the best."},
                 {text: "No?", feedback: "Oh! Ok tell me and I'll correct this immediately."},
@@ -215,14 +216,14 @@ document.addEventListener('DOMContentLoaded', function() {
           text: "Want to know what your prize is?", 
           answers: [
                 {text: "Was not expecting a prize...", feedback: "Well you aced the quiz so... click 'Next Question'"},
-                {text: "Yes, FINALLY!", feedback: "lol gotchu, click 'Next Question'"},
+                {text: "Yes, FINALLY!", feedback: "Gotchu, click 'Next Question'"},
           ], 
           correctIndices: [0, 1] // Indices of correct answers
       },
       { 
           text: "Actually, your prize is on hold. I'll give it to you later.", 
           answers: [
-                {text: "What the heck", feedback: "Sorry haha"},
+                {text: "What the heck", feedback: "Sorry!"},
                 {text: "Fine!", feedback: "Dw, it'll be worth it (maybe)"},
           ], 
           correctIndices: [0, 1] // Indices of correct answers
